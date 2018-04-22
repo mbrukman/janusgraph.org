@@ -18,10 +18,10 @@ ifeq ($(VERBOSE),1)
 endif
 
 .PHONY default:
-	$(VERB) echo "Available targets: install, serve"
+	$(VERB) echo "Available targets: build, run"
 
-install:
-	$(VERB) bundle install --path .bundle
+build:
+	docker build .
 
-serve:
-	$(VERB) bundle exec jekyll serve
+run:
+	docker run . -v /home/janusgraph/website:$$(pwd)
