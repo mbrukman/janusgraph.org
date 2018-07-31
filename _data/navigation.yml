@@ -1,0 +1,7 @@
+main:
+  - title: "Releases"
+    url: https://github.com/JanusGraph/janusgraph/releases/
+  - title: "GitHub"
+    url: https://github.com/JanusGraph/janusgraph/
+  - title: "Community"
+    url: https://github.com/JanusGraph/janusgraph/#community

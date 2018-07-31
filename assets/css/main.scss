@@ -1,3 +1,6 @@
+---
+---
+
 /*
  * Copyright 2017 JanusGraph Authors
  *
@@ -13,6 +16,46 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+@import "{{ site.theme }}";
+
+/* Remove extra whitespace in the nav bar. */
+.masthead__menu,
+.masthead__inner-wrap,
+.greedy-nav {
+  padding: 0;
+  margin: 0;
+}
+
+/* Sticky header via:
+ * https://github.com/mmistakes/minimal-mistakes/issues/490
+ */
+.masthead {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+a.site-title {
+  height: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+img.site-title {
+  height: 80px;
+}
+
+body {
+  padding: 80px 0 0;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
 
 a:link, a:visited, a:hover, a:active {
   color: #1b8669;

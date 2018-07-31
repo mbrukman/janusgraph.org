@@ -20,8 +20,15 @@ endif
 .PHONY default:
 	$(VERB) echo "Available targets: build, run"
 
-build:
-	docker build .
+JEKYLL_IMAGE = janusgraph-jekyll
+JEKYLL_HOST_PORT = 4000
+JEKYLL_SERVER_PORT = 4000
 
+build:
+	$(VERB) docker build . -t $(JEKYLL_IMAGE)
+
+# Workaround for https://github.com/jekyll/jekyll/issues/4268 (env vars)
 run:
-	docker run . -v /home/janusgraph/website:$$(pwd)
+	$(VERB) docker run -v $$(pwd):/home/janusgraph/website \
+	    -p $(JEKYLL_HOST_PORT):$(JEKYLL_SERVER_PORT) \
+	    -it $(JEKYLL_IMAGE)

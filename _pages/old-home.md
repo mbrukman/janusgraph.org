@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "JanusGraph: Distributed graph database"
+permalink: /old-home/
 ---
 
 <center>

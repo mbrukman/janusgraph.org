@@ -1,3 +1,26 @@
 title: JanusGraph
 description: Distributed graph database
-theme: jekyll-theme-slate
+repository: JanusGraph/janusgraph.org
+
+# Using a recent release tag from:
+# https://github.com/mmistakes/minimal-mistakes/releases
+remote_theme: "mmistakes/minimal-mistakes@4.12.1"
+
+include:
+  - _pages
+  - _data
+
+exclude:
+  - .asset-cache
+  - .bundle
+  - .git
+  - .sass-cache
+  - Gemfile*
+  - Dockerfile
+  - Makefile
+  - README*
+  - LICENSE*
+  - APACHE*
+  - CC-BY-*
+  - "*.txt"
+  - "*.sh"

@@ -13,5 +13,5 @@
 # limitations under the License.
 
 source 'https://rubygems.org'
-gem 'jekyll', '~> 3.3'
-gem 'jekyll-theme-slate', '~> 0.0.4'
+
+gem 'github-pages', group: :jekyll_plugins
